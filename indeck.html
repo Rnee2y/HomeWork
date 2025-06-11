@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>an-other shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Another</div>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="shop.html">Products</a></li>
+            <li><a href="shop.html">New</a></li>
+            <li><a href="shop.html">Exclusive</a></li>
+            <li><a href="shop.html">Merchandise</a></li>
+            <li><a href="wip.html">Series</a></li>
+            <li><a href="wip.html">Clothing</a></li>
+            <li><a href="wip.html">About</a></li>
+            <li><a href="wip.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>ANOTHER Place</h1>
+        <p>Your destination for premium figures & merchandise</p>
+        <button class="btn"  onclick="window.location.href='shop.html'">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Featured Slideshow -->
+    <div class="featured-slideshow">
+      <div class="slideshow-container" id="slideshow">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="img/slideshow/second.png" alt="Featured item 1" />
+          <div class="slide-content">
+            <h3 class="slide-title">New Collection</h3>
+            <p>Discover our latest arrivals</p>
+            <button class="slide-btn" onclick="window.location.href='shop.html'">View Collection</button>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="img/slideshow/four.png" alt="Featured item 2" />
+          <div class="slide-content">
+            <h3 class="slide-title">Exclusive Items</h3>
+            <p>Limited edition figures available now</p>
+            <button class="slide-btn" onclick="window.location.href='shop.html'">Shop Exclusives</button>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="img/slideshow/first.png" alt="Featured item 3" />
+          <div class="slide-content">
+            <h3 class="slide-title">Unique Request</h3>
+            <p> 30% off for first try</p>
+            <button class="slide-btn" onclick="window.location.href='wip.html'">try it</button>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <img src="img/slideshow/third.png" alt="Featured item 4" />
+          <div class="slide-content">
+            <h3 class="slide-title">Popular Series</h3>
+            <p>Browse our collections</p>
+            <button class="slide-btn" onclick="window.location.href='wip.html'">Explore</button>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="img/grid/co (1).jpeg" alt="Featured item 5" />
+          <div class="slide-content">
+            <h3 class="slide-title">Coming Soon</h3>
+            <p>Pre-order upcoming releases</p>
+            <button class="slide-btn" onclick="window.location.href='shop.html'"> STFU </button>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  
+    <!-- Products Section -->
+    <div class="container">
+      <h2 class="section-title">Featured Figures</h2>
+      <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-card" onclick="openModal('Chisato', '220000', 'img/lycoris-recoil.jpg')">
+          <img src="img/lycoris-recoil.jpg" alt="Chisato" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Chisato</h3>
+            <p class="product-price">Rp 220.000</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" onclick="openModal('Chibi Rem', '399000', 'img/rem-rezero.png', '550000')">
+          <img src="img/rem-rezero.png" alt="Chibi Rem" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Chibi Rem</h3>
+            <p class="product-price">
+              <span class="product-discount">Rp 550.000</span>
+              Rp 399.000
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" onclick="openModal('Zenitsu', '350000', 'img/kny.jpg')">
+          <img src="img/kny.jpg" alt="Zenitsu" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Zenitsu</h3>
+            <p class="product-price">Rp 350.000</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" onclick="openModal('Roronoa Zoro', '185000', 'img/one-piece-s.h.figuarts-akcni-figurka-roronoa-zoro.jpg.big.jpg')">
+          <img src="img/one-piece-s.h.figuarts-akcni-figurka-roronoa-zoro.jpg.big.jpg" alt="Roronoa Zoro" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Roronoa Zoro</h3>
+            <p class="product-price">Rp 185.000</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">New Arrivals</h2>
+      <div class="products-container">
+        <!-- Product 5 -->
+        <div class="product-card" onclick="openModal('2B', '599000', 'img/2b.jpg', '150000')">
+          <img src="img/2b.jpg" alt="2B" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">2B - Nier Automata</h3>
+            <p class="product-price">
+              <span class="product-discount">Rp 150.000</span>
+              Rp 599.000
+            </p>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" onclick="openModal('Tifa Lockhart', '175000', 'img/331302-statuette-figure-tifa-lockhart-final-fantasy-vii-rebirth.jpg')">
+          <img src="img/331302-statuette-figure-tifa-lockhart-final-fantasy-vii-rebirth.jpg" alt="Tifa Lockhart" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Tifa Lockhart</h3>
+            <p class="product-price">Rp 175.000</p>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" onclick="openModal('Midoria Izuku', '120000', 'img/midoria izuku.jpg')">
+          <img src="img/midoria izuku.jpg" alt="Midoria Izuku" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Midoria Izuku</h3>
+            <p class="product-price">Rp 120.000</p>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" onclick="openModal('Strike Freedom Gundam', '199000', 'img/gundam/800x.jpg', '250000')">
+          <img src="img/gundam/800x.jpg" alt="Strike Freedom Gundam" class="product-image" />
+          <div class="product-info">
+            <h3 class="product-title">Strike Freedom Gundam</h3>
+            <p class="product-price">
+              <span class="product-discount">Rp 250.000</span>
+              Rp 199.000
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brands Section -->
+    <section class="brands">
+      <div class="container">
+        <h2 class="section-title">Popular Series</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem">
+          <img src="img/logos/blueArchive.png" alt="Brand 1" class="brand-logo" />
+          <img src="img/logo (4).png" alt="Brand 2" class="brand-logo" />
+          <img src="img/logo (3).png" alt="Brand 3" class="brand-logo" />
+          <img src="img/logo (1).png" alt="Brand 4" class="brand-logo" />
+          <img src="img/logo (2).png" alt="Brand 5" class="brand-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Join Our Community</h2>
+        <p>Subscribe to get updates on new arrivals, exclusive deals, and special events.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Another</h3>
+            <p>Your premium destination for anime figures and merchandise.</p>
+            <div class="social-links">
+              <a href="#"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter" class="social-icon"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Shop</h3>
+            <ul class="footer-links">
+              <li><a href="shop.html">All Products</a></li>
+              <li><a href="shop.html">New Arrivals</a></li>
+              <li><a href="shop.html">Exclusive Items</a></li>
+              <li><a href="shop.html">Best Sellers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="wip.html">Contact Us</a></li>
+              <li><a href="wip.html">FAQs</a></li>
+              <li><a href="wip.html">Shipping Policy</a></li>
+              <li><a href="wip.html">Returns & Exchanges</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="wip.html">About Us</a></li>
+              <li><a href="wip.html">Blog</a></li>
+              <li><a href="wip.html">Careers</a></li>
+              <li><a href="wip.html">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">&copy; 2025 Another. ONE PIECE IS REAL <B>!!!</B>.</div>
+      </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-images">
+            <img src="" alt="Product Image" class="main-image" id="modalMainImage" />
+            <div class="thumbnail-container">
+              <img src="" alt="Thumbnail 1" class="thumbnail active" onclick="changeThumbnail(this)" />
+              <img src="" alt="Thumbnail 2" class="thumbnail" onclick="changeThumbnail(this)" />
+              <img src="" alt="Thumbnail 3" class="thumbnail" onclick="changeThumbnail(this)" />
+            </div>
+          </div>
+          <div class="modal-info">
+            <h2 class="modal-title" id="modalTitle">Product Title</h2>
+            <p class="modal-price" id="modalPrice">Rp 0</p>
+            <p class="modal-description">ini deskripsi.</p>
+            <button class="modal-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+   
+  </body>
+</html>
